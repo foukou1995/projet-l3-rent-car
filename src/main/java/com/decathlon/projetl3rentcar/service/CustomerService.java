@@ -32,11 +32,14 @@ public class CustomerService {
     }
 
     public CustomerDtoOut createCustomer(@Valid CustomerDtoIn customerDtoIn) {
-        //validateComponent(componentDtoIn);
         Customer customer = Customer.builder()
                 .email(customerDtoIn.getEmail())
-                .name(customerDtoIn.getName())
+                .lastName(customerDtoIn.getLastName()) // Modifier le getter en fonction du nouveau nom de champ
+                .firstName(customerDtoIn.getFirstName()) // Ajouter le champ firstName
                 .phone(customerDtoIn.getPhone())
+                .numberLicence(customerDtoIn.getNumberLicence()) // Ajouter le champ numberLicence
+                .expiryDateLicence(customerDtoIn.getExpiryDateLicence()) // Ajouter le champ expiryDateLicence
+                .dateBirth(customerDtoIn.getDateBirth()) // Ajouter le champ dateBirth
                 .build();
         customer = customerRepository.save(customer);
         return new CustomerDtoOut(customer);
