@@ -53,7 +53,7 @@ public class CustomerController {
             @ApiResponse(responseCode = "201", description = "customer added", content = {@Content(schema = @Schema(implementation = CustomerDtoOut.class))}),
             @ApiResponse(responseCode = "406", description = "Duplicate vehicles name", content = {@Content(schema = @Schema(implementation = ExceptionHandlerConfiguration.ErrorResponse.class))})
     })
-    public CustomerDtoOut createVehicle(@RequestBody CustomerDtoIn customerDtoIn) {
+    public CustomerDtoOut createCustomer(@RequestBody CustomerDtoIn customerDtoIn) {
         return customerService.createCustomer(customerDtoIn);
     }
 
