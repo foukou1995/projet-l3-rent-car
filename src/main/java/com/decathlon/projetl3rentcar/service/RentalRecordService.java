@@ -1,10 +1,7 @@
 package com.decathlon.projetl3rentcar.service;
 
-import com.decathlon.projetl3rentcar.controller.in.CustomerDtoIn;
 import com.decathlon.projetl3rentcar.controller.in.RentalRecordDtoIn;
-import com.decathlon.projetl3rentcar.controller.out.CustomerDtoOut;
 import com.decathlon.projetl3rentcar.controller.out.RentalRecordDtoOut;
-import com.decathlon.projetl3rentcar.entity.Customer;
 import com.decathlon.projetl3rentcar.entity.RentalRecord;
 import com.decathlon.projetl3rentcar.repository.CustomerRepository;
 import com.decathlon.projetl3rentcar.repository.RentalRecordRepository;
@@ -22,6 +19,7 @@ import java.util.List;
 public class RentalRecordService {
     @Autowired
     private final RentalRecordRepository rentalRecordRepository;
+    private final CustomerRepository customerRepository;
     public List<RentalRecordDtoOut> getRecords() {
         return rentalRecordRepository.findAll()
                 .stream()
@@ -34,8 +32,9 @@ public class RentalRecordService {
                 .endDate(rentalRecordDtoIn.getEndDate())
                 .startDate(rentalRecordDtoIn.getStartDate())
                 .vehicleId(rentalRecordDtoIn.getVehicleId())
-                .customerId(rentalRecordDtoIn.getCustomerId())
+                .customerId(customerRepository.findByEmail(rentalRecordDtoIn.getCustomerEmail()).getId())
                 .totalCost(rentalRecordDtoIn.getTotalCost())
+                .status(rentalRecordDtoIn.getStatus())
                 .build();
         rentalRecord = rentalRecordRepository.save(rentalRecord);
         return new RentalRecordDtoOut(rentalRecord);

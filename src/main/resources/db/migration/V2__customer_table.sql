@@ -6,7 +6,7 @@ CREATE TABLE customer (
                           last_name VARCHAR(255),
                           first_name VARCHAR(255),
                           email VARCHAR(255),
-                          mot_de_passe VARCHAR(255) NOT NULL,
+                          password VARCHAR(255) NOT NULL,
                           role VARCHAR(10) NOT NULL CHECK (role IN ('admin', 'client')),
                           number_licence VARCHAR(255),
                           expiry_date_licence DATE,

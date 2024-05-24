@@ -25,4 +25,5 @@ public class Customer {
     private String numberLicence; // Ajouter le champ numberLicence
     private LocalDate expiryDateLicence; // Ajouter le champ expiryDateLicence
     private LocalDate dateBirth; // Ajouter le champ dateBirth
+    private String password; // Ajout du champ mot_de_passe
 }

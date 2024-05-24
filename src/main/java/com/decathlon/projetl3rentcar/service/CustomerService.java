@@ -11,6 +11,7 @@ import com.decathlon.projetl3rentcar.repository.VehicleRepository;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.server.ResponseStatusException;
@@ -40,16 +41,23 @@ public class CustomerService {
                 .numberLicence(customerDtoIn.getNumberLicence()) // Ajouter le champ numberLicence
                 .expiryDateLicence(customerDtoIn.getExpiryDateLicence()) // Ajouter le champ expiryDateLicence
                 .dateBirth(customerDtoIn.getDateBirth()) // Ajouter le champ dateBirth
+                .password(customerDtoIn.getPassword()) // Utilisation du mot de passe fourni
                 .build();
         customer = customerRepository.save(customer);
         return new CustomerDtoOut(customer);
     }
 
-//    public void deleteVehicle(Integer vehicleId){
-//        Vehicle vehicle = vehicleRepository.findById(vehicleId)
-//                .orElseThrow(() -> new ResponseStatusException(NO_CONTENT, "Vehicle for id " + vehicleId + " already deleted or never created"));
-//        vehicleRepository.delete(vehicle);
-//    }
+    public Customer authenticate(String email, String password) {
+        // Recherche de l'utilisateur par email dans la base de données
+        Customer user = customerRepository.findByEmail(email);
+
+        // Vérification si l'utilisateur existe et si le mot de passe correspond
+        if (user != null && user.getPassword().equals(password)) {
+            return user; // Utilisateur authentifié
+        } else {
+            return null; // Échec de l'authentification
+        }
+    }
 
 
 }

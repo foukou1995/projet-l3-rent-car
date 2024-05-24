@@ -17,17 +17,17 @@ import java.time.ZonedDateTime;
 public class RentalRecordDtoOut {
     private int id;
     private int vehicleId;
-    private int customerId;
     private float totalCost;
     private ZonedDateTime startDate;
     private ZonedDateTime endDate;
+    private String status;
     public RentalRecordDtoOut(RentalRecord rentalRecord ) {
         this.id = rentalRecord.getId();
         this.vehicleId = rentalRecord.getVehicleId();
-        this.customerId = rentalRecord.getCustomerId();
         this.totalCost = rentalRecord.getTotalCost();
         this.startDate=rentalRecord.getStartDate();
         this.endDate=rentalRecord.getEndDate();
+        this.status=rentalRecord.getStatus();
     }
 
 }

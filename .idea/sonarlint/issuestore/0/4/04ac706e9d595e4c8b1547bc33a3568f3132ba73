@@ -1,13 +1,5 @@
 
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-V	java:S125 "<This block of commented-out lines of code should be removed.(ÈÇõäýÿÿÿÿ
-V	java:S125,"<This block of commented-out lines of code should be removed.(ŽžÄêýÿÿÿÿ
-q
-java:S1128"VRemove this unused import 'com.decathlon.projetl3rentcar.controller.in.CustomerDtoIn'.(¨¦£¿úÿÿÿÿ
-n
-java:S1128"XRemove this unused import 'com.decathlon.projetl3rentcar.controller.out.CustomerDtoOut'.(ª½Á
-`
-java:S1128"JRemove this unused import 'com.decathlon.projetl3rentcar.entity.Customer'.(ºÖ×˜
-n
-java:S1128	"XRemove this unused import 'com.decathlon.projetl3rentcar.repository.CustomerRepository'.(÷ªµ
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8µ°¥èú1J$251c04d0-2ec5-4732-91e8-dd43ddb483f4
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(ÈÇõäýÿÿÿÿ8¸°¥èú1J$121a3191-d888-49d3-8097-20b6f29b1028
+ƒ	java:S125+"<This block of commented-out lines of code should be removed.(ŽžÄêýÿÿÿÿ8¹°¥èú1J$6dfed239-6d6e-4e21-b9b1-75b34871d254

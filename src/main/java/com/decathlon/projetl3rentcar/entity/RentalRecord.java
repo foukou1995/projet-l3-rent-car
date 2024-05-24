@@ -27,5 +27,6 @@ public class RentalRecord {
     private float totalCost;
     private ZonedDateTime startDate;
     private ZonedDateTime endDate;
+    private String status;
 }
 

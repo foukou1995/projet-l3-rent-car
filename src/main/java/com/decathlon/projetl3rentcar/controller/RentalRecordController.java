@@ -53,6 +53,7 @@ public class RentalRecordController {
             @ApiResponse(responseCode = "406", description = "Duplicate vehicles name", content = {@Content(schema = @Schema(implementation = ExceptionHandlerConfiguration.ErrorResponse.class))})
     })
     public RentalRecordDtoOut createVehicle(@RequestBody RentalRecordDtoIn rentalRecordDtoIn) {
+
         return rentalRecordService.createRecord(rentalRecordDtoIn);
     }
 
