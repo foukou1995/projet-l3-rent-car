@@ -42,6 +42,7 @@ public class CustomerService {
                 .expiryDateLicence(customerDtoIn.getExpiryDateLicence()) // Ajouter le champ expiryDateLicence
                 .dateBirth(customerDtoIn.getDateBirth()) // Ajouter le champ dateBirth
                 .password(customerDtoIn.getPassword()) // Utilisation du mot de passe fourni
+                .role(customerDtoIn.getRole())
                 .build();
         customer = customerRepository.save(customer);
         return new CustomerDtoOut(customer);

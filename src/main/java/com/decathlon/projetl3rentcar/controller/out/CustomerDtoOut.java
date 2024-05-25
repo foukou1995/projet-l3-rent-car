@@ -21,6 +21,7 @@ public class CustomerDtoOut {
     private String numberLicence; // Ajouter le champ numberLicence
     private LocalDate expiryDateLicence; // Ajouter le champ expiryDateLicence
     private LocalDate dateBirth; // Ajouter le champ dateBirth
+    private String role;
 
     public CustomerDtoOut(Customer customer ) {
         this.id = customer.getId();
@@ -31,6 +32,7 @@ public class CustomerDtoOut {
         this.numberLicence = customer.getNumberLicence(); // Ajouter le champ numberLicence
         this.expiryDateLicence = customer.getExpiryDateLicence(); // Ajouter le champ expiryDateLicence
         this.dateBirth = customer.getDateBirth(); // Ajouter le champ dateBirth
+        this.role=customer.getRole();
     }
 
 }

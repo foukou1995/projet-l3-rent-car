@@ -1,19 +1,19 @@
 
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$4cb29609-6f50-4c2d-8c76-ef66b4ade264
-
-java:S1128"URemove this unused import 'com.decathlon.projetl3rentcar.controller.in.VehicleDtoIn'.(éò÷¥ÿÿÿÿÿ8·Õ¥æú1J$88cbd74d-2c81-428c-a5c2-23f20cf572de
-š
-java:S1128"WRemove this unused import 'com.decathlon.projetl3rentcar.controller.out.VehicleDtoOut'.( ÿÜŸ8·Õ¥æú1J$4b1d7ddf-1b06-46b9-a333-c2fb8f75f499
-Œ
-java:S1128"IRemove this unused import 'com.decathlon.projetl3rentcar.entity.Vehicle'.(İƒè“8·Õ¥æú1J$5832743d-d55c-4431-9491-c4d20b06a6f8
-™
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8œÙèú1J$4f98fb5c-ae75-4a4b-9aac-711785373b85
+w
+java:S1128"URemove this unused import 'com.decathlon.projetl3rentcar.controller.in.VehicleDtoIn'.(éò÷¥ÿÿÿÿÿ8Û±Üèú1
+t
+java:S1128"WRemove this unused import 'com.decathlon.projetl3rentcar.controller.out.VehicleDtoOut'.( ÿÜŸ8Ü±Üèú1
+f
+java:S1128"IRemove this unused import 'com.decathlon.projetl3rentcar.entity.Vehicle'.(İƒè“8Ü±Üèú1
+s
 java:S1128
-"WRemove this unused import 'com.decathlon.projetl3rentcar.repository.VehicleRepository'.(æÄ‡*8·Õ¥æú1J$d3d20af3-e230-4fb7-8e5f-0a61191e5e60
-Œ
-java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8Ëå¶çú1J$0d10cc6b-9dc9-46b9-8101-2816cacebb61
-•
+"WRemove this unused import 'com.decathlon.projetl3rentcar.repository.VehicleRepository'.(æÄ‡*8Ü±Üèú1
+f
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8Ü±Üèú1
+o
 java:S1128"SRemove this unused import 'org.springframework.web.server.ResponseStatusException'.(¢‡‚
-8·Õ¥æú1J$5e25d947-91a7-413c-af2a-7f726c10fea5
-
-java:S1128"KRemove this unused import 'org.springframework.http.HttpStatus.NO_CONTENT'.(áÅÙú8·Õ¥æú1J$0f18d8b8-7d95-40db-9208-26801d94bf92
+8Ü±Üèú1
+h
+java:S1128"KRemove this unused import 'org.springframework.http.HttpStatus.NO_CONTENT'.(áÅÙú8Ü±Üèú1
